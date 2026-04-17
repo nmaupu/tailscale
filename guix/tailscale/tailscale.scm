@@ -26,7 +26,7 @@
   (commit go-git-reference-commit)
   (sha    go-git-reference-sha256))
 
-(define* (go-fetch-vendored uri hash-algorithm hash-value name)
+(define* (go-fetch-vendored uri hash-algorithm hash-value name #:key system)
   (let ((src
          (match uri
            (($ <go-git-reference> url commit sha)
