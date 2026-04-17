@@ -5,7 +5,7 @@ To use this channel, add this to your channels list:
 ``` scheme
 (channel
  (name 'tailscale)
- (url "https://github.com/tailscale/tailscale/guix")
+ (url "https://github.com/tailscale/tailscale")
  (branch "main")
  (introduction
  (make-channel-introduction
