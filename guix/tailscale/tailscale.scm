@@ -18,7 +18,7 @@
 (define* go-package go-1.26)
 (define* tailscale-version "1.96.4")
 (define* tailscale-go-git-ref-hash "0qqlj6cq43h0pr8jg9g956yz5xgg81959vq2kl7n9yqnixyh8w2n")
-(define* tailscale-go-fetch-vendor-ref "0000000000000000000000000000000000000000000000000000")
+(define* tailscale-go-fetch-vendor-hash "1lz2pmyfka0inhiasgfd1spxa5ikn56c76r3zg136n9dz6163wz2")
 
 (define-record-type* <go-git-reference>
   go-git-reference make-go-git-reference
@@ -114,7 +114,7 @@
                       (commit (string-append "v" tailscale-version))
                       (sha (base32 tailscale-go-git-ref-hash))))
                 (sha256
-                 (base32 tailscale-go-fetch-vendor-ref))))
+                 (base32 tailscale-go-fetch-vendor-hash))))
       (build-system go-build-system)
       (arguments
        `(#:import-path "tailscale.com/cmd/tailscale"
