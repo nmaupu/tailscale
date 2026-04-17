@@ -17,7 +17,7 @@
 
 (define* go-package go-1.26)
 (define* tailscale-version "1.96.4")
-(define* tailscale-go-git-ref-hash "0000000000000000000000000000000000000000000000000000")
+(define* tailscale-go-git-ref-hash "0qqlj6cq43h0pr8jg9g956yz5xgg81959vq2kl7n9yqnixyh8w2n")
 (define* tailscale-go-fetch-vendor-ref "0000000000000000000000000000000000000000000000000000")
 
 (define-record-type* <go-git-reference>
